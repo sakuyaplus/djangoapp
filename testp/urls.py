@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url
 from django.urls import path
+from django.urls.conf import include
 from aac import views
 
 urlpatterns = [
+    path("", include("pages.urls")),
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', views.index),  # 添加index/的路径配置
 ]
