@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('phone', models.CharField(max_length=20)),
                 ('email', models.CharField(max_length=50)),
                 ('is_mvp', models.BooleanField(default=False)),
-                ('hire_data', models.DateTimeField(blank=True, default=datetime.datetime.now)),
+                ('hire_date', models.DateTimeField(blank=True, default=datetime.datetime.now)),
             ],
         ),
     ]

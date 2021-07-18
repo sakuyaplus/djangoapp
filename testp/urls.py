@@ -18,10 +18,12 @@ from django.conf.urls import url
 from django.urls import path
 from django.urls.conf import include
 from aac import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("pages.urls")),
     path("listings/",include('listings.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', views.index),  # 添加index/的路径配置
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
