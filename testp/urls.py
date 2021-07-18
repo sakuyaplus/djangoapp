@@ -21,6 +21,7 @@ from aac import views
 
 urlpatterns = [
     path("", include("pages.urls")),
+    path("listings/",include('listings.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', views.index),  # 添加index/的路径配置
 ]
