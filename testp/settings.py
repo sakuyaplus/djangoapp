@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'aac',
     'pages',
     'listings',
-    "realtors"
+    "realtors",
+    'accounts'
 ]
 
 MIDDLEWARE = [
