@@ -4,8 +4,12 @@
 
 {% load humanize %}
 
-{% block content %}
+{% block title %}
+ | Welcome
+{% endblock %}
 
+{% block content %}
+  {% include 'partials/_alerts.html' %}
   <!-- Showcase -->
   <section id="showcase">
     <div class="container text-center">
