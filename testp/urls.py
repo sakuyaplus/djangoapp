@@ -25,6 +25,7 @@ urlpatterns = [
     path("", include("pages.urls")),
     path("listings/",include('listings.urls')),
     path("accounts/",include('accounts.urls')),
+    path("contacts/",include('contacts.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', views.index),  # 添加index/的路径配置
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
